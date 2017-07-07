@@ -27,7 +27,7 @@ body {
   border-left: 1px solid #eee;
   padding-left: 20px;
   margin-left: 20px;
-  font-size: 26px;
+  font-size: 20px;
 }
 #big-header .header-box .center {
   float: left;
@@ -38,21 +38,21 @@ body {
 #big-header .header-box .center input {
   width: 240px;
   height: 38px;
-  border: 2px solid #3f88bf;
+  border: 2px solid #2863c8;
   float: left;
 }
 #big-header .header-box .center button {
   float: left;
   width: 90px;
   height: 38px;
-  background: #3f88bf;
+  background: #2863c8;
   color: #fff;
   border: 0;
   font-size: 18px;
 }
 #big-header .header-box .right {
   float: right;
-  font-size: 24px;
+  font-size: 20px;
 }
 #big-header .header-box .clearfloat {
   clear: both;
@@ -92,14 +92,14 @@ body {
   padding: 0 35px;
   color: #333;
   height: 100%;
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 500;
 }
 #big-nav .nav-box li:first-of-type {
   background: #fff;
 }
 #big-nav .nav-box li:first-of-type a {
-  color: #428ac1;
+  color: #2863c8;
   font-weight: 500;
 }
 #big-main {
@@ -148,7 +148,7 @@ body {
   font-size: 18px;
 }
 #big-main .main-sincerity .sincerity-left .left-title .lndustry-name li:hover a {
-  color: #4089c0;
+  color: #2863c8;
 }
 #big-main .main-sincerity .sincerity-left .left-title .title-more {
   float: right;
@@ -618,7 +618,7 @@ body {
   font-size: 18px;
 }
 #big-main .main-chaxun .sincerity-left .left-title .lndustry-name li:hover a {
-  color: #4089c0;
+  color: #2863c8;
 }
 #big-main .main-chaxun .sincerity-left .left-title .title-more {
   float: right;
