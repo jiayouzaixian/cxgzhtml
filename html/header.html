@@ -13,6 +13,21 @@
 	</head>
 	<body>
 		<header id="header">
+			<header id="big-header">
+				<div class="header-box">
+					<div class="left">
+						<img src="img/bigDta-LOGO.png"/>
+						<span class="big-title">诚信贵州好品大数据平台</span>
+					</div>
+					<div class="center">
+						<input type="text" />
+						<button>搜索</button>
+					</div>
+					<p class="right"><span class="denglu">登录</span> /  <span class="zhuce">注册</span></p>
+					<div class="clearfloat"></div>
+				</div>
+			</header>
+			
 			<div id="big-banner">
 				<div class="swiper-container">
 				  	<div class="swiper-wrapper">
@@ -26,31 +41,17 @@
 			            <div class="swiper-button-next nextBtn"></div>-->
 			        </article>
 				</div>
-				<div id="top">
-				<header id="big-header">
-					<div class="header-box">
-						<div class="left">
-							<img src="img/bigDta-LOGO.png"/>
-							<span class="big-title">诚信贵州好品大数据平台</span>
-						</div>
-						<div class="center">
-							<input type="text" />
-							<button>搜索</button>
-						</div>
-						<p class="right"><span class="denglu">登录</span> /  <span class="zhuce">注册</span></p>
-						<div class="clearfloat"></div>
-					</div>
-				</header>
-				<div id="big-nav">
-					<ul class="nav-box">
-						<li class="one-nav"><a href="###">首页</a></li>
-						<li><a href="###">品牌馆</a></li>
-						<li><a href="###">产品馆</a></li>
-						<li><a href="###">贵州省著名景区</a></li>
-						<li><a href="###">企业查询</a></li>
-						<li><a href="###">商标查询</a></li>
-					</ul>
-				</div>
+			</div>
+				
+			<div id="big-nav">
+				<ul class="nav-box">
+					<li class="one-nav"><a href="###">首页</a></li>
+					<li><a href="###">品牌馆</a></li>
+					<li><a href="###">产品馆</a></li>
+					<li><a href="###">贵州省著名景区</a></li>
+					<li><a href="###">企业查询</a></li>
+					<li><a href="###">商标查询</a></li>
+				</ul>
 			</div>
 		</header>
 	</body>
@@ -74,11 +75,11 @@
 				mySwiper.startAutoplay();
 			});
 			$("#big-nav .nav-box li").hover(function(){
-				$(this).find("a").css({'color': '#2863c8'});
-				$(this).siblings("li").find("a").css({'color': '#fff'});
+				$(this).find("a").css({'background': 'rgba(0,0,0, 0.5)'});
+				$(this).siblings("li").find("a").css({'background': '#2863c8'});
 			},function(){
-				$("#big-nav .nav-box li").eq(0).find("a").css({'color': '#2863c8'});
-				$("#big-nav .nav-box li").eq(0).siblings("li").find("a").css({'color': '#fff'});
+				$("#big-nav .nav-box li").eq(0).find("a").css({'background': 'rgba(0,0,0, 0.5)'});
+				$("#big-nav .nav-box li").eq(0).siblings("li").find("a").css({'background': '#2863c8'});
 			});
 			
 			
