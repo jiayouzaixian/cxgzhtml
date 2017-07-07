@@ -226,11 +226,11 @@ input, select, textarea,button{
 }
 @font-face {
   font-family: 'jyzx-h5';  /* project id 210635 */
-  src: url('http://at.alicdn.com/t/font_rm74u2xhg6u8r529.eot');
-  src: url('http://at.alicdn.com/t/font_rm74u2xhg6u8r529.eot?#iefix') format('embedded-opentype'),
-  url('http://at.alicdn.com/t/font_rm74u2xhg6u8r529.woff') format('woff'),
-  url('http://at.alicdn.com/t/font_rm74u2xhg6u8r529.ttf') format('truetype'),
-  url('http://at.alicdn.com/t/font_rm74u2xhg6u8r529.svg#jyzx-h5') format('svg');
+  src: url('https://at.alicdn.com/t/font_iupqcpdjrcz0k9.eot');
+  src: url('https://at.alicdn.com/t/font_iupqcpdjrcz0k9.eot?#iefix') format('embedded-opentype'),
+  url('https://at.alicdn.com/t/font_iupqcpdjrcz0k9.woff') format('woff'),
+  url('https://at.alicdn.com/t/font_iupqcpdjrcz0k9.ttf') format('truetype'),
+  url('https://at.alicdn.com/t/font_iupqcpdjrcz0k9.svg#jyzx-h5') format('svg');
 }
 /*主页的样式*/
 .jy-iconfont{
@@ -475,11 +475,21 @@ input, select, textarea,button{
 }
 .icon-dingwei::before{
 	content: "\e659";
-	/*color: #3556db;*/
 }
-.icon-dingwei1::before{
-	content: "\e659";
-	color: #bd1500;
+.icon-zhuban::before{
+	content: "\e65d";
+}
+.icon-jiandu::before{
+	content: "\e87c";
+}
+.icon-lianxi::before{
+	content: "\e65b";
+}
+.icon-jishu::before{
+	content: "\e65a";
+}
+.icon-hezuo::before{
+	content: "\e686";
 }
 
 

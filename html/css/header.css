@@ -1,0 +1,112 @@
+#top {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+#big-header {
+  width: 100%;
+  background: transparent;
+  overflow: hidden;
+}
+#big-header .header-box {
+  width: 1340px;
+  margin: 0 auto;
+  height: 120px;
+  color: #fff;
+  line-height: 120px;
+  background: transparent;
+}
+#big-header .header-box .left {
+  float: left;
+}
+#big-header .header-box .left img {
+  margin-top: -10px;
+}
+#big-header .header-box .left .big-title {
+  display: inline-block;
+  height: 53px;
+  line-height: 53px;
+  border-left: 1px solid #eee;
+  padding-left: 20px;
+  margin-left: 20px;
+  font-size: 20px;
+}
+#big-header .header-box .center {
+  float: left;
+  margin-left: 200px;
+  overflow: hidden;
+  margin-top: 37px;
+}
+#big-header .header-box .center input {
+  width: 240px;
+  height: 38px;
+  border: 2px solid #2863c8;
+  float: left;
+  background: transparent;
+}
+#big-header .header-box .center button {
+  float: left;
+  width: 90px;
+  height: 38px;
+  background: #2863c8;
+  color: #fff;
+  border: 0;
+  font-size: 18px;
+}
+#big-header .header-box .right {
+  float: right;
+  font-size: 20px;
+}
+#big-header .header-box .clearfloat {
+  clear: both;
+}
+#big-banner {
+  min-width: 1340px;
+  min-height: 440px;
+  position: relative;
+}
+#big-banner .swiper-slide {
+  min-height: 440px;
+}
+#big-banner .swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: -40px;
+  margin-right: 12px;
+}
+#big-banner .swiper-pagination-bullet-active {
+  background: #95c357;
+}
+#big-nav {
+  width: 100%;
+  min-width: 1340px;
+  background: transparent;
+  height: 62px;
+}
+#big-nav .nav-box {
+  height: 100%;
+  width: 1340px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#big-nav .nav-box li {
+  float: left;
+}
+#big-nav .nav-box li a {
+  display: inline-block;
+  padding: 0 35px;
+  color: #fff;
+  height: 100%;
+  font-size: 20px;
+  font-weight: 500;
+}
+#big-nav .nav-box li:first-of-type {
+  background: transparent;
+}
+#big-nav .nav-box li:first-of-type a {
+  color: #2863c8;
+  font-weight: 500;
+}
