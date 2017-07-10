@@ -40,6 +40,7 @@
   background: transparent;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
+  padding-left: 15px;
 }
 #big-header .header-box .center button {
   float: left;
@@ -61,11 +62,11 @@
 }
 #big-banner {
   min-width: 1340px;
-  min-height: 580px;
+  height: 480px;
   position: relative;
 }
 #big-banner .swiper-slide {
-  min-height: 580px;
+  height: 480px;
 }
 #big-banner .swiper-pagination-bullet {
   width: 20px;
@@ -76,35 +77,4 @@
 }
 #big-banner .swiper-pagination-bullet-active {
   background: #95c357;
-}
-#big-nav {
-  width: 100%;
-  min-width: 1340px;
-  background: #2863c8;
-  height: 62px;
-  line-height: 62px;
-}
-#big-nav .nav-box {
-  height: 100%;
-  width: 1340px;
-  margin: 0 auto;
-  overflow: hidden;
-}
-#big-nav .nav-box li {
-  float: left;
-}
-#big-nav .nav-box li a {
-  display: inline-block;
-  padding: 0 35px;
-  color: #fff;
-  height: 100%;
-  font-size: 20px;
-  font-weight: 500;
-}
-#big-nav .nav-box li:first-of-type {
-  background: transparent;
-}
-#big-nav .nav-box li:first-of-type a {
-  font-weight: 500;
-  background: rgba(0, 0, 0, 0.5);
 }
