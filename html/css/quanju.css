@@ -226,11 +226,11 @@ input, select, textarea,button{
 }
 @font-face {
   font-family: 'jyzx-h5';  /* project id 210635 */
-  src: url('https://at.alicdn.com/t/font_iupqcpdjrcz0k9.eot');
-  src: url('https://at.alicdn.com/t/font_iupqcpdjrcz0k9.eot?#iefix') format('embedded-opentype'),
-  url('https://at.alicdn.com/t/font_iupqcpdjrcz0k9.woff') format('woff'),
-  url('https://at.alicdn.com/t/font_iupqcpdjrcz0k9.ttf') format('truetype'),
-  url('https://at.alicdn.com/t/font_iupqcpdjrcz0k9.svg#jyzx-h5') format('svg');
+  src: url('https://at.alicdn.com/t/font_k9pd1gaabsinqaor.eot');
+  src: url('https://at.alicdn.com/t/font_k9pd1gaabsinqaor.eot?#iefix') format('embedded-opentype'),
+  url('https://at.alicdn.com/t/font_k9pd1gaabsinqaor.woff') format('woff'),
+  url('https://at.alicdn.com/t/font_k9pd1gaabsinqaor.ttf') format('truetype'),
+  url('https://at.alicdn.com/t/font_k9pd1gaabsinqaor.svg#jyzx-h5') format('svg');
 }
 /*主页的样式*/
 .jy-iconfont{
@@ -490,6 +490,21 @@ input, select, textarea,button{
 }
 .icon-hezuo::before{
 	content: "\e686";
+}
+.icon-yanjing::before{
+	content: "\e6ef";
+}
+.icon-zhuda::before{
+	content: "\e671";
+}
+.icon-pinpai::before{
+	content: "\e6a4";
+}
+.icon-jingxuan::before{
+	content: "\e651";
+}
+.icon-huojiang::before{
+	content: "\e661";
 }
 
 
