@@ -1,5 +1,6 @@
 body {
   background: #f1f2f3;
+  position: relative;
 }
 #big-nav {
   width: 100%;
@@ -338,11 +339,19 @@ body {
 #big_main .main_right .right2 ul li {
   position: relative;
 }
-#big_main .main_right .right2 ul li #pp {
+#big_main .main_right .right2 ul li #start {
+  width: 100%;
+  height: 100%;
+  background: transparent;
   position: absolute;
-  top: 50px;
+  top: 60px;
   left: 140px;
-  z-index: 50;
+  z-index: 100;
+  display: inline-block;
+}
+#big_main .main_right .right2 ul li #start i {
+  font-size: 70px;
+  color: rgba(255, 255, 255, 0.8);
 }
 #big_main .main_right .right3 {
   width: 100%;
@@ -438,18 +447,100 @@ body {
   background: #89a64c;
   color: #fff;
 }
-#big-footer {
+#bigfuceng {
+  width: 260px;
+  height: 412px;
+  background: #fff;
+  position: absolute;
+  right: 195px;
+  bottom: 84px;
+  padding: 15px 18px;
+  display: none;
+}
+#bigfuceng h3 {
+  height: 48px;
+  line-height: 24px;
+  font-size: 13px;
+  color: #787878;
+}
+#bigfuceng textarea {
   width: 100%;
-  height: 360px;
-  background: #000000;
-  margin-top: 40px;
+  height: 88px;
+  margin-top: 15px;
+  padding: 10px;
+  font-size: 10px;
+  line-height: 18px;
+  border: 1px solid #e1e3e2;
 }
-#big-footer .img {
-  width: 1200px;
-  height: 360px;
-  margin: 0 auto;
+#bigfuceng input {
+  display: block;
+  border: 1px solid #e1e3e2;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  margin-top: 13px;
+  padding-left: 10px;
 }
-#big-footer .img img {
+#bigfuceng input:first-of-type {
+  margin-top: 8px;
+}
+#bigfuceng .button {
+  font-size: 13px;
+  height: 30px;
+  width: 100%;
+  line-height: 30px;
+  text-align: center;
+  background: #2963c7;
+  margin-top: 20px;
+  color: #fff;
+}
+#bigfuceng textarea::-webkit-input-placeholder {
+  color: #9c9c9c;
+}
+#bigfuceng textarea::-moz-placeholder {
+  color: #9c9c9c;
+}
+#bigfuceng textarea:-ms-input-placeholder {
+  color: #9c9c9c;
+}
+#bigfuceng input::-webkit-input-placeholder {
+  color: #9ea8c1;
+}
+#bigfuceng input::-moz-placeholder {
+  color: #9ea8c1;
+}
+#bigfuceng input:-ms-input-placeholder {
+  color: #9ea8c1;
+}
+#smallfuceng {
+  width: 296px;
+  height: 189px;
+  background: #fff;
+  position: absolute;
+  right: 190px;
+  bottom: 86px;
+}
+#smallfuceng div {
+  padding: 30px 0;
   width: 100%;
   height: 100%;
+  position: relative;
+}
+#smallfuceng div h3 {
+  font-size: 19px;
+  color: #333333;
+  line-height: 36px;
+  padding: 0 20px;
+}
+#smallfuceng div p {
+  height: 56px;
+  line-height: 56px;
+  text-align: center;
+  background: #2963c7;
+  color: #fff;
+  font-size: 22px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
