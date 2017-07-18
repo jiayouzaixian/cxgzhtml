@@ -11,7 +11,7 @@
 		<link rel="stylesheet" type="text/css" href="css/index.css"/>
 	</head><!--http://www.guizhou.xin/pc/images/index2_header_img2.jpg-->
 	<body>
-		<header>
+		<header id="header">
 			<iframe src="header.html" width="100%" height="560px" scrolling="no" frameborder="no"></iframe>
 		</header>
 		
@@ -1441,15 +1441,8 @@
 			
 		</main>
 		<div id="returnTop">
-			<i class="jy-iconfont footerTop"></i>
-			<a href="#big-header">返回顶部</a>
-			
+			<a href="#header"><i class="jy-iconfont icon-top"></a></i>
 		</div>
-		<!--<footer id="big-footer">
-			<div class="img">
-				<img src="img/footer.png"/>
-			</div>
-		</footer>-->
 		<footer>
 			<iframe src="footer.html" width="100%" height="360px" scrolling="no" frameborder="no"></iframe>
 		</footer>
@@ -1579,11 +1572,11 @@
         		}
         	});
         	
-			$("#returnTop").hover(function(){
-				$(this).find("a").slideDown();
-			},function(){
-				$(this).find("a").slideUp();
-			});
+//			$("#returnTop").hover(function(){
+//				$(this).find("a").slideDown();
+//			},function(){
+//				$(this).find("a").slideUp();
+//			});
 			
 			$(window).scroll(function(){
 				var top = ($(document).scrollTop());
