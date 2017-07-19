@@ -534,6 +534,12 @@ input, select, textarea,button{
 .icon-top::before{
 	content: "\e663";
 }
+.icon-left::before{
+	content: "\e604";
+}
+.icon-right::before{
+	content: "\e65f";
+}
 
 
 /*我的关注--订单状态*/
