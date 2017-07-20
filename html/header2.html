@@ -19,11 +19,12 @@
 					</li>
 					<li class="header2">
 						<ul id="header2">
+							<li class="nav1"><a href="###">首页</a></li>
 							<li class="nav1"><a href="###">品牌馆</a></li>
 							<li class="nav1"><a href="###">产品馆</a></li>
-							<li class="nav1"><a href="###">著名景区</a></li>
+							<li class="nav1"><a href="###">贵州省著名景区</a></li>
 							<li class="nav1"><a href="###">企业查询</a></li>
-							<li class="nav1"><a href="###">商标查询</a></li>
+							<li class="nav1"><a href="###">商标馆</a></li>
 						</ul>
 					</li>
 					<li class="header3">
@@ -32,11 +33,11 @@
 							<option value="pinpai">品牌1</option>
 							<option value="pinpai">品牌2</option>
 						</select>
-						<input type="text" id="search" />
-						<button>搜索</button>
+						<input type="text" id="search" placeholder="中国茅台酒厂有限责任公司" />
+						<button><i class="jy-iconfont icon-search"></i></button>
 					</li>
 					<li class="header4">
-						<span class="land">登陆</span>　<span class="register">注册</span>
+						<span class="land"><i class="jy-iconfont icon-denglu"></i> 登陆</span>　<span class="register"><i class="jy-iconfont icon-zhuce"></i> 注册</span>
 					</li>
 				</ul>
 			</div>
@@ -47,13 +48,13 @@
 		$(document).ready(function() {
 			// 导航条点击事件
 			$("#header2 li").click(function(){
-				$(this).find("a").css("color","#2863c8").find("i").css("color","#2863c8");
-				$(this).siblings("li").find("a").css("color","#7a7a7a").find("i").css("color","#7a7a7a");
+				$(this).css({"background": "#055aaa","border-bottom": "5px solid #de0122"}).find("a").css("color","#fff");
+				$(this).siblings("li").find("a").css("color","#055aaa");
 			})
 			// 导航条划过事件
 			$("#header2 li").hover(function(){
-				$(this).find("a").css("color","#2863c8").find("i").css("color","#2863c8");
-				$(this).siblings("li").find("a").css("color","#7a7a7a").find("i").css("color","#7a7a7a");
+				$(this).css({"background": "#055aaa","border-bottom": "5px solid #de0122"}).find("a").css("color","#fff");
+				$(this).siblings("li").css({"background": "#fff","border-bottom": "none"}).find("a").css("color","#055aaa");
 			})
 			
 		})
