@@ -1,8 +1,3 @@
-<!-- 
-	
-	---景区介绍---
-
- -->
 <!DOCTYPE html>
 <html>
 	<head>
@@ -299,12 +294,10 @@
 	<script src="js/jquery.raty.min.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
-			// 导航条点击事件
 			$("#header2 li").click(function(){
 				$(this).find("a").css("color","#2863c8").find("i").css("color","#2863c8");
 				$(this).siblings("li").find("a").css("color","#7a7a7a").find("i").css("color","#7a7a7a");
 			})
-			// 导航条划过事件
 			$("#header2 li").hover(function(){
 				$(this).find("a").css("color","#2863c8").find("i").css("color","#2863c8");
 				$(this).siblings("li").find("a").css("color","#7a7a7a").find("i").css("color","#7a7a7a");
@@ -312,7 +305,6 @@
 				$("#header2 li").eq(0).find("a").css("color","#2863c8").find("i").css("color","#2863c8");
 				$("#header2 li").eq(0).siblings("li").find("a").css("color","#7a7a7a").find("i").css("color","#7a7a7a");
 			})
-			// 旅游模块
 			$(".left3 .nav li").hover(function(){
 				$(this).find("a").css("color","#2863c8");
 				$(this).siblings("li").find("a").css("color","#333333");

@@ -1,8 +1,3 @@
-<!-- 
-	
-	---景区列表---
-
- -->
 <!DOCTYPE html>
 <html>
 	<head>
@@ -61,7 +56,6 @@
 				<li><a href="###">安顺</a></li>
 				<li><a href="###">铜仁</a></li>
 			</ul>
-			<!-- 全部 -->
 			<section class="main mainall">
 				<ul>
 					<li><img src="img/scenery_list1.png" /></li>
@@ -78,7 +72,6 @@
 					<li><img src="img/scenery_list12.png" /></li>
 				</ul>
 			</section>
-			<!-- 贵阳 -->
 			<section class="main main1">
 				<ul>
 					<li><img src="img/scenery_list10.png" /></li>
@@ -95,7 +88,6 @@
 					<li><img src="img/scenery_list12.png" /></li>
 				</ul>
 			</section>
-			<!-- 遵义 -->
 			<section class="main main2">
 				<ul>
 					<li><img src="img/scenery_list4.png" /></li>
@@ -112,7 +104,6 @@
 					<li><img src="img/scenery_list12.png" /></li>
 				</ul>
 			</section>
-			<!-- 黔南 -->
 			<section class="main main3">
 				<ul>
 					<li><img src="img/scenery_list7.png" /></li>
@@ -129,7 +120,6 @@
 					<li><img src="img/scenery_list12.png" /></li>
 				</ul>
 			</section>
-			<!-- 毕节 -->
 			<section class="main main4">
 				<ul>
 					<li><img src="img/scenery_list1.png" /></li>
@@ -146,7 +136,6 @@
 					<li><img src="img/scenery_list12.png" /></li>
 				</ul>
 			</section>
-			<!-- 黔西南 -->
 			<section class="main main5">
 				<ul>
 					<li><img src="img/scenery_list11.png" /></li>
@@ -163,7 +152,6 @@
 					<li><img src="img/scenery_list3.png" /></li>
 				</ul>
 			</section>
-			<!-- 六盘水 -->
 			<section class="main main6">
 				<ul>
 					<li><img src="img/scenery_list5.png" /></li>
@@ -180,7 +168,6 @@
 					<li><img src="img/scenery_list12.png" /></li>
 				</ul>
 			</section>
-			<!-- 黔东南 -->
 			<section class="main main7">
 				<ul>
 					<li><img src="img/scenery_list8.png" /></li>
@@ -197,7 +184,6 @@
 					<li><img src="img/scenery_list12.png" /></li>
 				</ul>
 			</section>
-			<!-- 安顺 -->
 			<section class="main main8">
 				<ul>
 					<li><img src="img/scenery_list11.png" /></li>
@@ -214,7 +200,6 @@
 					<li><img src="img/scenery_list3.png" /></li>
 				</ul>
 			</section>
-			<!-- 铜仁 -->
 			<section class="main main9">
 				<ul>
 					<li><img src="img/scenery_list1.png" /></li>
@@ -248,12 +233,10 @@
 	<script src="js/jquery.raty.min.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
-			// 导航条点击事件
 			$("#header2 li").click(function(){
 				$(this).find("a").css("color","#2863c8").find("i").css("color","#2863c8");
 				$(this).siblings("li").find("a").css("color","#7a7a7a").find("i").css("color","#7a7a7a");
 			})
-			// 导航条划过事件
 			$("#header2 li").hover(function(){
 				$(this).find("a").css("color","#2863c8").find("i").css("color","#2863c8");
 				$(this).siblings("li").find("a").css("color","#7a7a7a").find("i").css("color","#7a7a7a");
@@ -261,7 +244,6 @@
 				$("#header2 li").eq(0).find("a").css("color","#2863c8").find("i").css("color","#2863c8");
 				$("#header2 li").eq(0).siblings("li").find("a").css("color","#7a7a7a").find("i").css("color","#7a7a7a");
 			})
-			// 列表切换
 			$("#big_main .title li").hover(function(){
 				$(this).find("a").css("color","#2863c8");
 				$(this).siblings("li").find("a").css("color","#333333");

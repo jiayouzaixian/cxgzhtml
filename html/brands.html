@@ -1,8 +1,3 @@
-<!-- 
-	
-	---品牌馆---
-
- -->
 <!DOCTYPE html>
 <html>
 	<head>
@@ -17,27 +12,30 @@
 	</head>
 	<body>
 		
-		<header>
-			<iframe src="header.html" width="100%" height="560px" scrolling="no" frameborder="no"></iframe>
+		<header id="header">
+			<!--<iframe src="header2.html" width="100%" height="117px" scrolling="no" frameborder="no"></iframe>-->
 		</header>
-		
-		<div id="big-nav">
-				<ul class="nav-box">
-					<li class="nav1"><a href="http://data.t.jiayou9.com/index.html">首页</a></li>
-					<li class="nav2"><a href="http://data.t.jiayou9.com/brands.html">品牌馆</a></li>
-					<li class="nav3"><a href="">产品馆</a></li>
-					<li class="nav3"><a href="">贵州省著名景区</a></li>
-					<li class="nav5"><a href="">企业查询</a></li>
-					<li class="nav6"><a href="">商标查询</a></li>
-				</ul>
+		<div id="big-banner">
+			<div class="swiper-container">
+			  	<div class="swiper-wrapper">
+				  	<img src="http://www.guizhou.xin/pc/images/index2_header_img1.jpg" class="swiper-slide" />
+				  	<img src="http://www.guizhou.xin/pc/images/index2_header_img2.jpg" class="swiper-slide" />
+				  	<img src="http://www.guizhou.xin/pc/images/index2_header_img3.jpg" class="swiper-slide" />
+			  	</div>
+			  	<article>
+		            <!--<div class="swiper-button-prev nextBtn"></div>
+		            <div class="swiper-button-next nextBtn"></div>-->
+		        </article>
 			</div>
-		
+		</div>
 		<div id="big_main">
 			<main class="main1">
-				<h2><i class="jy-iconfont icon-huojiang"></i>最新获奖的品牌</h2>
+				<div class="main1_title">
+					<h2><i class="jy-iconfont icon-huojiang"></i>最新获奖的品牌<span></span></h2>
+				</div>
 				<div class="main1_left">
 					<div class="top">
-						<div class="top_left"><img src="img/huojiang1.png" /></div>
+						<div class="top_left"><img src="img/pinpai1.png" /></div>
 						<div class="top_right">
 							<h3>阳春白雪</h3>
 							<p>有机 生态 抗辐射</p>
@@ -61,16 +59,12 @@
 								<div class="img"><img src="img/huojiang6.png" /></div>
 								<p><span>阳春白雪</span> 贵芽1939手工绿茶茶翠芽明前雀舌 茶叶遵义特产贵沙龙课</p>
 							</li>
-							<li>
-								<div class="img"><img src="img/huojiang7.png" /></div>
-								<p><span>阳春白雪</span> 贵芽1939手工绿茶茶翠芽明前雀舌 茶叶遵义特产贵沙龙课</p>
-							</li>
 						</ul>
 					</div>
 				</div>
 				<div class="main1_right">
 					<div class="top">
-						<div class="top_left"><img src="img/huojiang13.png" /></div>
+						<div class="top_left"><img src="img/pinpai1.png" /></div>
 						<div class="top_right">
 							<h3>湄潭翠芽</h3>
 							<p>有机 生态 抗辐射</p>
@@ -94,23 +88,21 @@
 								<div class="img"><img src="img/huojiang10.png" /></div>
 								<p><span>阳春白雪</span> 贵芽1939手工绿茶茶翠芽明前雀舌 茶叶遵义特产贵沙龙课</p>
 							</li>
-							<li>
-								<div class="img"><img src="img/huojiang11.png" /></div>
-								<p><span>阳春白雪</span> 贵芽1939手工绿茶茶翠芽明前雀舌 茶叶遵义特产贵沙龙课</p>
-							</li>
 						</ul>
 					</div>
 				</div>
 			</main>
 			<main class="main2">
-				<h2><i class="jy-iconfont icon-zhiming"></i>知名品牌</h2>
-				<div class="main2_left">
-					<h3>多彩贵州</h3>
-					<p>贵州有56个知名产地</p>
-					<p>覆盖23个行业类目</p>
-					<p>共有34个实力品牌</p>
+				<div class="main2_title">
+					<h2><i class="jy-iconfont icon-zhiming"></i>知名品牌<span></span></h2>
 				</div>
-				<div class="main2_center">
+				<div class="main2_left">
+					<h3><img src="img/duocai.png" /></h3>
+					<p>贵州有<span>56</span>个知名产地</p>
+					<p>覆盖<span>23</span>个行业类目</p>
+					<p>共有<span>34</span>个实力品牌</p>
+				</div>
+				<main class="main2_center">
 					<ul>
 						<li class="center1">
 							<h5><i class="jy-iconfont icon-dingwei"></i></h5>
@@ -374,7 +366,7 @@
 							</div>
 						</li>
 					</ul>
-				</div>
+				</main>
 				<div class="main2_right">
 					<h2>贵州知名品牌</h2>
 					<ul>
@@ -418,84 +410,21 @@
 			</main>
 			
 			<main class="main3">
-				<h2><i class="jy-iconfont icon-tuijian"></i>推荐品牌</h2>
-				<div class="main3_left">
+				<div class="main3_title">
+					<h2><i class="jy-iconfont icon-tuijian"></i>推荐品牌<span></span></h2>
+				</div>
+				<div class="main3_left1">
+					<div class="logo"><img src="img/guizhoubiaogan.png" /></div>
 					<div class="top">
-						<div class="top_left"><img src="img/tuijian1.png" /></div>
+						<div class="top_left"><img src="img/pinpai1.png" /></div>
 						<div class="top_right">
 							<h3>阳春白雪</h3>
 							<p>有机 生态 抗辐射</p>
 							<h4>荣誉：贵州省精神文明先进单位</h4>
+							<div class="img1"><img src="img/huojiang2.png" /></div>
+							<div class="img2"><img src="img/huojiang3.png" /></div>
 						</div>
 					</div>
-					<p class="center">岁月忽而老了，光阴的屋檐下，多了一份静谧，安静中可以听到花开的声音，可以听到窗外的鸟鸣，也可以听清自己内心的声音。</p>
-					<div class="bottom">
-						<h3>主打商品/服务</h3>
-						<ul>
-							<li>
-								<div class="img"><img src="img/tuijian3.png" /></div>
-								<p><span>阳春白雪</span> 贵芽1939手工绿茶茶翠芽明前雀舌 茶叶遵义特产贵沙龙课</p>
-							</li>
-							<li>
-								<div class="img"><img src="img/tuijian4.png" /></div>
-								<p><span>阳春白雪</span> 贵芽1939手工绿茶茶翠芽明前雀舌 茶叶遵义特产贵沙龙课</p>
-							</li>
-							<li>
-								<div class="img"><img src="img/tuijian5.png" /></div>
-								<p><span>阳春白雪</span> 贵芽1939手工绿茶茶翠芽明前雀舌 茶叶遵义特产贵沙龙课</p>
-							</li>
-							<li>
-								<div class="img"><img src="img/tuijian6.png" /></div>
-								<p><span>阳春白雪</span> 贵芽1939手工绿茶茶翠芽明前雀舌 茶叶遵义特产贵沙龙课</p>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="main3_right">
-					<div class="top">
-						<div class="top_left"><img src="img/tuijian2.png" /></div>
-						<div class="top_right">
-							<h3>湄潭翠芽</h3>
-							<p>有机 生态 抗辐射</p>
-							<h4>荣誉：贵州省精神文明先进单位</h4>
-						</div>
-					</div>
-					<p class="center">岁月忽而老了，光阴的屋檐下，多了一份静谧，安静中可以听到花开的声音，可以听到窗外的鸟鸣，也可以听清自己内心的声音。</p>
-					<div class="bottom">
-						<h3>主打商品/服务</h3>
-						<ul>
-							<li>
-								<div class="img"><img src="img/tuijian7.png" /></div>
-								<p><span>阳春白雪</span> 贵芽1939手工绿茶茶翠芽明前雀舌 茶叶遵义特产贵沙龙课</p>
-							</li>
-							<li>
-								<div class="img"><img src="img/tuijian8.png" /></div>
-								<p><span>阳春白雪</span> 贵芽1939手工绿茶茶翠芽明前雀舌 茶叶遵义特产贵沙龙课</p>
-							</li>
-							<li>
-								<div class="img"><img src="img/tuijian9.png" /></div>
-								<p><span>阳春白雪</span> 贵芽1939手工绿茶茶翠芽明前雀舌 茶叶遵义特产贵沙龙课</p>
-							</li>
-							<li>
-								<div class="img"><img src="img/tuijian10.png" /></div>
-								<p><span>阳春白雪</span> 贵芽1939手工绿茶茶翠芽明前雀舌 茶叶遵义特产贵沙龙课</p>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</main>
-			<main class="main4">
-				<section><img src="img/tuijian23.png"/></section>
-				<div class="main4_left">
-					<div class="top">
-						<div class="top_left"><img src="img/tuijian21.png" /></div>
-						<div class="top_right">
-							<h3>阳春白雪</h3>
-							<p>有机 生态 抗辐射</p>
-							<h4>荣誉：贵州省精神文明先进单位</h4>
-						</div>
-					</div>
-					<p class="center">岁月忽而老了，光阴的屋檐下，多了一份静谧，安静中可以听到花开的声音，可以听到窗外的鸟鸣，也可以听清自己内心的声音。</p>
 					<div class="bottom">
 						<h3>主打商品/服务</h3>
 						<ul>
@@ -511,23 +440,20 @@
 								<div class="img"><img src="img/huojiang6.png" /></div>
 								<p><span>阳春白雪</span> 贵芽1939手工绿茶茶翠芽明前雀舌 茶叶遵义特产贵沙龙课</p>
 							</li>
-							<li>
-								<div class="img"><img src="img/huojiang7.png" /></div>
-								<p><span>阳春白雪</span> 贵芽1939手工绿茶茶翠芽明前雀舌 茶叶遵义特产贵沙龙课</p>
-							</li>
 						</ul>
 					</div>
 				</div>
-				<div class="main4_right">
+				<div class="main3_right1">
 					<div class="top">
-						<div class="top_left"><img src="img/tuijian22.png" /></div>
+						<div class="top_left"><img src="img/pinpai2.png" /></div>
 						<div class="top_right">
 							<h3>湄潭翠芽</h3>
 							<p>有机 生态 抗辐射</p>
 							<h4>荣誉：贵州省精神文明先进单位</h4>
+							<div class="img1"><img src="img/huojiang12.png" /></div>
+							<div class="img2"><img src="img/huojiang2.png" /></div>
 						</div>
 					</div>
-					<p class="center">岁月忽而老了，光阴的屋檐下，多了一份静谧，安静中可以听到花开的声音，可以听到窗外的鸟鸣，也可以听清自己内心的声音。</p>
 					<div class="bottom">
 						<h3>主打商品/服务</h3>
 						<ul>
@@ -543,75 +469,122 @@
 								<div class="img"><img src="img/huojiang10.png" /></div>
 								<p><span>阳春白雪</span> 贵芽1939手工绿茶茶翠芽明前雀舌 茶叶遵义特产贵沙龙课</p>
 							</li>
-							<li>
-								<div class="img"><img src="img/huojiang11.png" /></div>
-								<p><span>阳春白雪</span> 贵芽1939手工绿茶茶翠芽明前雀舌 茶叶遵义特产贵沙龙课</p>
-							</li>
 						</ul>
 					</div>
 				</div>
-			</main>
-			<main class="main5">
-				<section><img src="img/tuijian24.png"/></section>
-				<div class="main5_left">
+				<div class="main3_left2">
 					<div class="top">
-						<div class="top_left"><img src="img/tuijian11.png" /></div>
+						<div class="top_left"><img src="img/pinpai3.png" /></div>
 						<div class="top_right">
 							<h3>阳春白雪</h3>
 							<p>有机 生态 抗辐射</p>
 							<h4>荣誉：贵州省精神文明先进单位</h4>
+							<div class="img1"><img src="img/huojiang2.png" /></div>
+							<div class="img2"><img src="img/huojiang3.png" /></div>
 						</div>
 					</div>
-					<p class="center">岁月忽而老了，光阴的屋檐下，多了一份静谧，安静中可以听到花开的声音，可以听到窗外的鸟鸣，也可以听清自己内心的声音。</p>
 					<div class="bottom">
 						<h3>主打商品/服务</h3>
 						<ul>
 							<li>
-								<div class="img"><img src="img/tuijian13.png" /></div>
+								<div class="img"><img src="img/huojiang4.png" /></div>
 								<p><span>阳春白雪</span> 贵芽1939手工绿茶茶翠芽明前雀舌 茶叶遵义特产贵沙龙课</p>
 							</li>
 							<li>
-								<div class="img"><img src="img/tuijian14.png" /></div>
+								<div class="img"><img src="img/huojiang5.png" /></div>
 								<p><span>阳春白雪</span> 贵芽1939手工绿茶茶翠芽明前雀舌 茶叶遵义特产贵沙龙课</p>
 							</li>
 							<li>
-								<div class="img"><img src="img/tuijian15.png" /></div>
-								<p><span>阳春白雪</span> 贵芽1939手工绿茶茶翠芽明前雀舌 茶叶遵义特产贵沙龙课</p>
-							</li>
-							<li>
-								<div class="img"><img src="img/tuijian16.png" /></div>
+								<div class="img"><img src="img/huojiang6.png" /></div>
 								<p><span>阳春白雪</span> 贵芽1939手工绿茶茶翠芽明前雀舌 茶叶遵义特产贵沙龙课</p>
 							</li>
 						</ul>
 					</div>
 				</div>
-				<div class="main5_right">
+				<div class="main3_right2">
+					<div class="logo"><img src="img/quzhengfutuijian.png" /></div>
 					<div class="top">
-						<div class="top_left"><img src="img/tuijian12.png" /></div>
+						<div class="top_left"><img src="img/pinpai4.png" /></div>
 						<div class="top_right">
 							<h3>湄潭翠芽</h3>
 							<p>有机 生态 抗辐射</p>
 							<h4>荣誉：贵州省精神文明先进单位</h4>
+							<div class="img1"><img src="img/huojiang12.png" /></div>
+							<div class="img2"><img src="img/huojiang2.png" /></div>
 						</div>
 					</div>
-					<p class="center">岁月忽而老了，光阴的屋檐下，多了一份静谧，安静中可以听到花开的声音，可以听到窗外的鸟鸣，也可以听清自己内心的声音。</p>
 					<div class="bottom">
 						<h3>主打商品/服务</h3>
 						<ul>
 							<li>
-								<div class="img"><img src="img/tuijian17.png" /></div>
+								<div class="img"><img src="img/huojiang8.png" /></div>
 								<p><span>阳春白雪</span> 贵芽1939手工绿茶茶翠芽明前雀舌 茶叶遵义特产贵沙龙课</p>
 							</li>
 							<li>
-								<div class="img"><img src="img/tuijian18.png" /></div>
+								<div class="img"><img src="img/huojiang9.png" /></div>
 								<p><span>阳春白雪</span> 贵芽1939手工绿茶茶翠芽明前雀舌 茶叶遵义特产贵沙龙课</p>
 							</li>
 							<li>
-								<div class="img"><img src="img/tuijian19.png" /></div>
+								<div class="img"><img src="img/huojiang10.png" /></div>
+								<p><span>阳春白雪</span> 贵芽1939手工绿茶茶翠芽明前雀舌 茶叶遵义特产贵沙龙课</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="main3_left3">
+					<div class="logo"><img src="img/guizhoubiaogan.png" /></div>
+					<div class="top">
+						<div class="top_left"><img src="img/pinpai1.png" /></div>
+						<div class="top_right">
+							<h3>阳春白雪</h3>
+							<p>有机 生态 抗辐射</p>
+							<h4>荣誉：贵州省精神文明先进单位</h4>
+							<div class="img1"><img src="img/huojiang2.png" /></div>
+							<div class="img2"><img src="img/huojiang3.png" /></div>
+						</div>
+					</div>
+					<div class="bottom">
+						<h3>主打商品/服务</h3>
+						<ul>
+							<li>
+								<div class="img"><img src="img/huojiang4.png" /></div>
 								<p><span>阳春白雪</span> 贵芽1939手工绿茶茶翠芽明前雀舌 茶叶遵义特产贵沙龙课</p>
 							</li>
 							<li>
-								<div class="img"><img src="img/tuijian20.png" /></div>
+								<div class="img"><img src="img/huojiang5.png" /></div>
+								<p><span>阳春白雪</span> 贵芽1939手工绿茶茶翠芽明前雀舌 茶叶遵义特产贵沙龙课</p>
+							</li>
+							<li>
+								<div class="img"><img src="img/huojiang6.png" /></div>
+								<p><span>阳春白雪</span> 贵芽1939手工绿茶茶翠芽明前雀舌 茶叶遵义特产贵沙龙课</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="main3_right3">
+					<div class="top">
+						<div class="top_left"><img src="img/pinpai1.png" /></div>
+						<div class="top_right">
+							<h3>湄潭翠芽</h3>
+							<p>有机 生态 抗辐射</p>
+							<h4>荣誉：贵州省精神文明先进单位</h4>
+							<div class="img1"><img src="img/huojiang12.png" /></div>
+							<div class="img2"><img src="img/huojiang2.png" /></div>
+						</div>
+					</div>
+					<div class="bottom">
+						<h3>主打商品/服务</h3>
+						<ul>
+							<li>
+								<div class="img"><img src="img/huojiang8.png" /></div>
+								<p><span>阳春白雪</span> 贵芽1939手工绿茶茶翠芽明前雀舌 茶叶遵义特产贵沙龙课</p>
+							</li>
+							<li>
+								<div class="img"><img src="img/huojiang9.png" /></div>
+								<p><span>阳春白雪</span> 贵芽1939手工绿茶茶翠芽明前雀舌 茶叶遵义特产贵沙龙课</p>
+							</li>
+							<li>
+								<div class="img"><img src="img/huojiang10.png" /></div>
 								<p><span>阳春白雪</span> 贵芽1939手工绿茶茶翠芽明前雀舌 茶叶遵义特产贵沙龙课</p>
 							</li>
 						</ul>
@@ -619,14 +592,12 @@
 				</div>
 			</main>
 			
-			
 		</div>
 		<div id="returnTop">
-			<i class="jy-iconfont footerTop"></i>
-			<a href="#big-header">返回顶部</a>
+			<a href="#header"><i class="jy-iconfont icon-top"></a></i>
 		</div>
-		<footer>
-			<iframe src="footer.html" width="100%" height="360px" scrolling="no" frameborder="no"></iframe>
+		<footer id="footer">
+			<!--<iframe src="footer.html" width="100%" height="360px" scrolling="no" frameborder="no"></iframe>-->
 		</footer>
 		
 	</body>
@@ -636,28 +607,56 @@
 	<script src="js/echarts.common.min.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
-			// 导航条划过事件
+			$("#header").load("./header2.html");
+			$("#footer").load("./footer.html");
+			var mySwiper = new Swiper('.swiper-container', {
+				autoplay: 2000,//可选选项，自动滑动
+				loop : true,//环路
+				prevButton:'.swiper-button-prev',//左右按钮
+				nextButton:'.swiper-button-next',
+				pagination : '.swiper-pagination',//分页器
+				autoplayDisableOnInteraction : false,//点击后继续播放
+			});
+			$('.swiper-container').mouseenter(function(){
+				mySwiper.stopAutoplay();
+			}).mouseleave(function(){
+				mySwiper.startAutoplay();
+			});
 			$("#big-nav .nav-box li").hover(function(){
 				$(this).find("a").css({'background': 'rgba(0,0,0, 0.5)'});
 				$(this).siblings("li").find("a").css({'background': '#2863c8'});
 			},function(){
-				$("#big-nav .nav-box li").eq(1).find("a").css({'background': 'rgba(0,0,0, 0.5)'});
-				$("#big-nav .nav-box li").eq(1).siblings("li").find("a").css({'background': '#2863c8'});
+				$("#big-nav .nav-box li").eq(0).find("a").css({'background': 'rgba(0,0,0, 0.5)'});
+				$("#big-nav .nav-box li").eq(0).siblings("li").find("a").css({'background': '#2863c8'});
 			});
-			// 知名品牌
 			$("#big_main .main2 .main2_center ul li").click(function(){
 				$(this).children("h5").children("i").css({
-					"fontSize": "38px",
-					"color": "#bd1500",
+					"fontSize": "51px",
 				});
 				$(this).siblings("li").children("h5").children("i").css({
 					"fontSize": "28px",
-					"color": "#3556db",
 				});
-				$(this).children(".name").css("margin-top", "0");
-				$(this).siblings("li").children(".name").css("margin-top", "10px");
+				$(this).children(".name").css({"display":"inline-block","margin-top":"0"});
+				$(this).siblings("li").children(".name").css({"display":"none","margin-top":"0"});
 				$(this).children(".small").css("display", "block");
 				$(this).siblings("li").children(".small").css("display", "none");
+			})
+			$("#returnTop").hover(function(){
+				$(this).find("a").slideDown();
+			},function(){
+				$(this).find("a").slideUp();
+			});
+			$(window).scroll(function(){
+				var top = ($(document).scrollTop());
+				if(top > 840){
+					$("#returnTop").show();
+				}else if(top <= 600){
+					$("#returnTop").hide();
+				}
+			});
+			$("#header2 li:eq(1)").click(function(){
+				$(this).css({"background": "#055aaa","border-bottom": "5px solid #de0122"}).find("a").css("color","#fff");
+				$(this).siblings("li").find("a").css("color","#055aaa");
 			})
 			
 		})

@@ -1,8 +1,3 @@
-<!-- 
-	
-	---产品详情---
-
- -->
 <!DOCTYPE html>
 <html>
 	<head>
@@ -148,7 +143,6 @@
 	<script src="js/jquery.raty.min.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
-			// 导航条划过事件
 			$("#big-nav .nav-box li").hover(function(){
 				$(this).find("a").css({'background': 'rgba(0,0,0, 0.5)'});
 				$(this).siblings("li").find("a").css({'background': '#2863c8'});
@@ -156,7 +150,6 @@
 				$("#big-nav .nav-box li").eq(1).find("a").css({'background': 'rgba(0,0,0, 0.5)'});
 				$("#big-nav .nav-box li").eq(1).siblings("li").find("a").css({'background': '#2863c8'});
 			});
-			// 知名品牌
 			$("#big_main .main2 .main2_center ul li").click(function(){
 				$(this).children("h5").children("i").css({
 					"fontSize": "38px",
@@ -184,7 +177,6 @@
 //	            playStatus =! playStatus;
 //	        }
 			
-			// 评价
 			$('#star1').raty({
 				path: "./img",
 				size: 100
