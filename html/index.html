@@ -5,7 +5,7 @@
 	    <meta charset="utf-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
-	    <link rel="icon" href="http://pc.t.jiayou9.com/img/logo1.png" mce_href="http://pc.t.jiayou9.com/img/logo1.png" type="image/x-icon" />
+	    <link rel="icon" href="img/logo.png" mce_href="img/logo.png" type="image/x-icon" />
     	<link rel="stylesheet" href="css/quanju.css" />
 		<link rel="stylesheet" type="text/css" href="css/swiper-3.3.1.min.css"/>
 		<link rel="stylesheet" type="text/css" href="css/index.css"/>
@@ -33,8 +33,8 @@
 					<li class="header3">
 						<select>
 							<option value="pinpai">品牌</option>
-							<option value="pinpai">品牌1</option>
-							<option value="pinpai">品牌2</option>
+							<option value="pinpai">企业</option>
+							<option value="pinpai">商标</option>
 						</select>
 						<input type="text" id="search" placeholder="中国茅台酒厂有限责任公司" />
 						<button><i class="jy-iconfont icon-search"></i></button>
@@ -1049,33 +1049,18 @@
 			});
 			
 			$("#big-main .main-sincerity .lndustry-name").find("li:eq(0) a").css("border-top","4px solid #0459aa");
+			$("#big-main .main-sincerity .lndustry-name").find("li:eq(0)").css("margin-top","-4px");
 			$("#big-main .main-sincerity .left-title .lndustry-name li").hover(function(){
 				$(this).find("a").css("border-top","4px solid #0459aa");
-				$(this).siblings("li").find("a").css("border-top","none");
+				$("#big-main .main-sincerity .lndustry-name").css("margin-top","-4px");
+				$("#big-main .main-sincerity .lndustry-name").find("li:eq(0)").css("margin-top","0");
+				$(this).siblings("li").find("a").css("border-top","4px solid transparent");
 				var idx = $(this).index();
 				$(this).parents(".sincerity-left").find(".xianshi-content").eq(idx).show().siblings(".xianshi-content").hide();
 			},function(){
 				$(this).find("a").css("border-top","4px solid #0459aa");
 			});
 			
-//			$("#big-main .main-sincerity .sincerity-right .right-title p span").click(function(){
-//				$(this).css("color","#82d1fa").siblings("span").css("color","#333");
-//				var idx = $(this).index();
-//				if(idx == 0){
-//					$(this).parents(".sincerity-right").find(".right-show").show().siblings(".right-hide").hide();
-//				}else{
-//					$(this).parents(".sincerity-right").find(".right-hide").show().siblings(".right-show").hide();
-//				}
-//			});
-//			$("#big-main .main-chaxun .sincerity-right .right-title p span").click(function(){
-//				$(this).css("color","#82d1fa").siblings("span").css("color","#333");
-//				var idx = $(this).index();
-//				if(idx == 0){
-//					$(this).parents(".sincerity-right").find(".right-show").show().siblings(".right-hide").hide();
-//				}else{
-//					$(this).parents(".sincerity-right").find(".right-hide").show().siblings(".right-show").hide();
-//				}
-//			});
 			
 				var myChart = echarts.init(document.getElementById("chaxun_address"));
 				
