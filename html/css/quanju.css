@@ -568,6 +568,9 @@ input, select, textarea,button{
 .icon-xiangguan::before{
 	content: "\e67a";
 }
+.icon-index::before{
+	content: "\e600";
+}
 
 .icon-shengyushijian::before{
 	content: "\e64e";

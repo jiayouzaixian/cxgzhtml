@@ -15,16 +15,16 @@
 			<div id="content">
 				<ul>
 					<li class="header1">
-						<div class="img"><img src="img/bigDta-LOGO.png" /></div>
-						<div class="title">诚信贵州好品大数据平台</div>
+						<img src="img/bigDta-LOGO.png" />
 					</li>
 					<li class="header2">
 						<ul id="header2">
-							<li class="nav1"><a href="###">品牌馆<i class="jy-iconfont icon-xiala"></i></a></li>
-							<li class="nav1"><a href="###">产品馆<i class="jy-iconfont icon-xiala"></i></a></li>
-							<li class="nav1"><a href="###">著名景区<i class="jy-iconfont icon-xiala"></i></a></li>
-							<li class="nav1"><a href="###">企业查询<i class="jy-iconfont icon-xiala"></i></a></li>
-							<li class="nav1"><a href="###">商标查询<i class="jy-iconfont icon-xiala"></i></a></li>
+							<li class="nav1"><a href="http://data.t.jiayou9.com/index.html">首页</a></li>
+							<li class="nav1"><a href="http://data.t.jiayou9.com/brands.html">品牌馆</a></li>
+							<li class="nav1"><a href="http://data.t.jiayou9.com/product_museum.html">产品馆</a></li>
+							<li class="nav1"><a href="http://data.t.jiayou9.com/scenery_museum.html">贵州省著名景区</a></li>
+							<li class="nav1"><a href="###">企业查询</a></li>
+							<li class="nav1"><a href="###">商标馆</a></li>
 						</ul>
 					</li>
 					<li class="header3">
@@ -33,11 +33,11 @@
 							<option value="pinpai">品牌1</option>
 							<option value="pinpai">品牌2</option>
 						</select>
-						<input type="text" id="search" />
-						<button>搜索</button>
+						<input type="text" id="search" placeholder="中国茅台酒厂有限责任公司" />
+						<button><i class="jy-iconfont icon-search"></i></button>
 					</li>
 					<li class="header4">
-						<span class="land">登陆</span>　<span class="register">注册</span>
+						<span class="land"><i class="jy-iconfont icon-denglu"></i> 登录</span>　<span class="register"><i class="jy-iconfont icon-zhuce"></i> 注册</span>
 					</li>
 				</ul>
 			</div>
@@ -47,11 +47,10 @@
 			<main class="main2"><img src="img/pinpai1.png" /></main>
 		</div>
 		<div id="returnTop">
-			<i class="jy-iconfont footerTop"></i>
-			<a href="#big-header">返回顶部</a>
+			<a href="#header"><i class="jy-iconfont icon-top"></a></i>
 		</div>
-		<footer>
-			<iframe src="footer.html" width="100%" height="360px" scrolling="no" frameborder="no"></iframe>
+		<footer id="footer">
+			<!--<iframe src="footer.html" width="100%" height="360px" scrolling="no" frameborder="no"></iframe>-->
 		</footer>
 		
 	</body>
@@ -62,18 +61,26 @@
 	<script src="js/jquery.raty.min.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
+			$("#footer").load("./footer.html");
 			$("#header2 li").click(function(){
-				$(this).find("a").css("color","#2863c8").find("i").css("color","#2863c8");
-				$(this).siblings("li").find("a").css("color","#7a7a7a").find("i").css("color","#7a7a7a");
+				$(this).css({"background": "#055aaa","border-bottom": "5px solid #de0122"}).find("a").css("color","#fff");
+				$(this).siblings("li").find("a").css("color","#055aaa");
 			})
 			$("#header2 li").hover(function(){
-				$(this).find("a").css("color","#2863c8").find("i").css("color","#2863c8");
-				$(this).siblings("li").find("a").css("color","#7a7a7a").find("i").css("color","#7a7a7a");
+				$(this).css({"background": "#055aaa","border-bottom": "5px solid #de0122"}).find("a").css("color","#fff");
+				$(this).siblings("li").css({"background": "#fff","border-bottom": "none"}).find("a").css("color","#055aaa");
 			},function(){
-				$("#header2 li").eq(0).find("a").css("color","#2863c8").find("i").css("color","#2863c8");
-				$("#header2 li").eq(0).siblings("li").find("a").css("color","#7a7a7a").find("i").css("color","#7a7a7a");
+				$("#header2 li").eq(0).css({"background": "#055aaa","border-bottom": "5px solid #de0122"}).find("a").css("color","#fff");
+				$("#header2 li").eq(0).siblings("li").css({"background": "#fff","border-bottom": "none"}).find("a").css("color","#055aaa");
 			})
-			
+			$(window).scroll(function(){
+				var top = ($(document).scrollTop());
+				if(top > 840){
+					$("#returnTop").show();
+				}else if(top <= 600){
+					$("#returnTop").hide();
+				}
+			});
 			
 		})
 	</script>

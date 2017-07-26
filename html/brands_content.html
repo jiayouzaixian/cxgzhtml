@@ -12,8 +12,39 @@
 	</head>
 	<body>
 		
+		<!--<header id="header">
+			<iframe src="header2.html" width="100%" height="117px" scrolling="no" frameborder="no"></iframe>
+		</header>-->
 		<header id="header">
-			<!--<iframe src="header2.html" width="100%" height="117px" scrolling="no" frameborder="no"></iframe>-->
+			<div id="content">
+				<ul>
+					<li class="header1">
+						<img src="img/bigDta-LOGO.png" />
+					</li>
+					<li class="header2">
+						<ul id="header2">
+							<li class="nav1"><a href="http://data.t.jiayou9.com/index.html">首页</a></li>
+							<li class="nav1"><a href="http://data.t.jiayou9.com/brands.html">品牌馆</a></li>
+							<li class="nav1"><a href="http://data.t.jiayou9.com/product_museum.html">产品馆</a></li>
+							<li class="nav1"><a href="http://data.t.jiayou9.com/scenery_museum.html">贵州省著名景区</a></li>
+							<li class="nav1"><a href="###">企业查询</a></li>
+							<li class="nav1"><a href="###">商标馆</a></li>
+						</ul>
+					</li>
+					<li class="header3">
+						<select>
+							<option value="pinpai">品牌</option>
+							<option value="pinpai">品牌1</option>
+							<option value="pinpai">品牌2</option>
+						</select>
+						<input type="text" id="search" placeholder="中国茅台酒厂有限责任公司" />
+						<button><i class="jy-iconfont icon-search"></i></button>
+					</li>
+					<li class="header4">
+						<span class="land"><i class="jy-iconfont icon-denglu"></i> 登录</span>　<span class="register"><i class="jy-iconfont icon-zhuce"></i> 注册</span>
+					</li>
+				</ul>
+			</div>
 		</header>
 		<div id="big-banner">
 			<div class="swiper-container">
@@ -272,16 +303,19 @@
 	<script src="js/echarts.common.min.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
-			$("#header").load("./header2.html");
+//			$("#header").load("./header2.html");
 			$("#footer").load("./footer.html");
-			// 导航条划过事件
-			$("#big-nav .nav-box li").hover(function(){
-				$(this).find("a").css({'background': 'rgba(0,0,0, 0.5)'});
-				$(this).siblings("li").find("a").css({'background': '#2863c8'});
+			$("#header2 li").click(function(){
+				$(this).css({"background": "#055aaa","border-bottom": "5px solid #de0122"}).find("a").css("color","#fff");
+				$(this).siblings("li").find("a").css("color","#055aaa");
+			})
+			$("#header2 li").hover(function(){
+				$(this).css({"background": "#055aaa","border-bottom": "5px solid #de0122"}).find("a").css("color","#fff");
+				$(this).siblings("li").css({"background": "#fff","border-bottom": "none"}).find("a").css("color","#055aaa");
 			},function(){
-				$("#big-nav .nav-box li").eq(1).find("a").css({'background': 'rgba(0,0,0, 0.5)'});
-				$("#big-nav .nav-box li").eq(1).siblings("li").find("a").css({'background': '#2863c8'});
-			});
+				$("#header2 li").eq(1).css({"background": "#055aaa","border-bottom": "5px solid #de0122"}).find("a").css("color","#fff");
+				$("#header2 li").eq(1).siblings("li").css({"background": "#fff","border-bottom": "none"}).find("a").css("color","#055aaa");
+			})
 			// 知名品牌
 			$("#big_main .main2 .main2_center ul li").click(function(){
 				$(this).children("h5").children("i").css({

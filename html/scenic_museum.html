@@ -15,16 +15,16 @@
 			<div id="content">
 				<ul>
 					<li class="header1">
-						<div class="img"><img src="img/bigDta-LOGO.png" /></div>
-						<div class="title">诚信贵州好品大数据平台</div>
+						<img src="img/bigDta-LOGO.png" />
 					</li>
 					<li class="header2">
 						<ul id="header2">
-							<li class="nav1"><a href="###">品牌馆<i class="jy-iconfont icon-xiala"></i></a></li>
-							<li class="nav1"><a href="###">产品馆<i class="jy-iconfont icon-xiala"></i></a></li>
-							<li class="nav1"><a href="###">著名景区<i class="jy-iconfont icon-xiala"></i></a></li>
-							<li class="nav1"><a href="###">企业查询<i class="jy-iconfont icon-xiala"></i></a></li>
-							<li class="nav1"><a href="###">商标查询<i class="jy-iconfont icon-xiala"></i></a></li>
+							<li class="nav1"><a href="http://data.t.jiayou9.com/index.html">首页</a></li>
+							<li class="nav1"><a href="http://data.t.jiayou9.com/brands.html">品牌馆</a></li>
+							<li class="nav1"><a href="http://data.t.jiayou9.com/product_museum.html">产品馆</a></li>
+							<li class="nav1"><a href="http://data.t.jiayou9.com/scenery_museum.html">贵州省著名景区</a></li>
+							<li class="nav1"><a href="###">企业查询</a></li>
+							<li class="nav1"><a href="###">商标馆</a></li>
 						</ul>
 					</li>
 					<li class="header3">
@@ -33,30 +33,29 @@
 							<option value="pinpai">品牌1</option>
 							<option value="pinpai">品牌2</option>
 						</select>
-						<input type="text" id="search" />
-						<button>搜索</button>
+						<input type="text" id="search" placeholder="中国茅台酒厂有限责任公司" />
+						<button><i class="jy-iconfont icon-search"></i></button>
 					</li>
 					<li class="header4">
-						<span class="land">登陆</span>　<span class="register">注册</span>
+						<span class="land"><i class="jy-iconfont icon-denglu"></i> 登录</span>　<span class="register"><i class="jy-iconfont icon-zhuce"></i> 注册</span>
 					</li>
 				</ul>
 			</div>
 		</header>
 		<!-- 轮播图 -->
-		<banner id="big_banner">
+		<div id="big-banner">
 			<div class="swiper-container">
 			  	<div class="swiper-wrapper">
 				  	<img src="img/jingquguan_banner1.png" class="swiper-slide" />
 				  	<img src="http://www.guizhou.xin/pc/images/index2_header_img2.jpg" class="swiper-slide" />
 				  	<img src="http://www.guizhou.xin/pc/images/index2_header_img3.jpg" class="swiper-slide" />
 			  	</div>
-			  	<!--<div class="swiper-pagination"></div>-->
 			  	<article>
 		            <!--<div class="swiper-button-prev nextBtn"></div>
 		            <div class="swiper-button-next nextBtn"></div>-->
 		        </article>
 			</div>
-		</banner>
+		</div>
 		<!-- 主体 -->
 		<div id="big_main">
 			<main class="main1">
@@ -584,11 +583,10 @@
 			</main>
 		</div>
 		<div id="returnTop">
-			<i class="jy-iconfont footerTop"></i>
-			<a href="#big-header">返回顶部</a>
+			<a href="#header"><i class="jy-iconfont icon-top"></a></i>
 		</div>
-		<footer>
-			<iframe src="footer.html" width="100%" height="360px" scrolling="no" frameborder="no"></iframe>
+		<footer id="footer">
+			<!--<iframe src="footer.html" width="100%" height="360px" scrolling="no" frameborder="no"></iframe>-->
 		</footer>
 		
 	</body>
@@ -599,21 +597,31 @@
 	<script src="js/jquery.raty.min.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
-			// 轮播图的滚动
-//			var mySwiper = new Swiper('.swiper-container', {
-//				autoplay: 2000,	// 可选选项，自动滑动
-//				loop : true,	// 环路
-//				prevButton:'.swiper-button-prev',	// 左右按钮
-//				nextButton:'.swiper-button-next',	// 左右按钮
-//				pagination : '.swiper-pagination',	// 分页器
-//				autoplayDisableOnInteraction : false,	// 点击后继续播放
-//			});
-			// 鼠标移入轮播图时停止滚动，移出后恢复滚动
-//			$('.swiper-container').mouseenter(function(){
-//				mySwiper.stopAutoplay();
-//			}).mouseleave(function(){
-//				mySwiper.startAutoplay();
-//			});
+			$("#footer").load("./footer.html");
+			$("#header2 li").click(function(){
+				$(this).css({"background": "#055aaa","border-bottom": "5px solid #de0122"}).find("a").css("color","#fff");
+				$(this).siblings("li").find("a").css("color","#055aaa");
+			})
+			$("#header2 li").hover(function(){
+				$(this).css({"background": "#055aaa","border-bottom": "5px solid #de0122"}).find("a").css("color","#fff");
+				$(this).siblings("li").css({"background": "#fff","border-bottom": "none"}).find("a").css("color","#055aaa");
+			},function(){
+				$("#header2 li").eq(3).css({"background": "#055aaa","border-bottom": "5px solid #de0122"}).find("a").css("color","#fff");
+				$("#header2 li").eq(3).siblings("li").css({"background": "#fff","border-bottom": "none"}).find("a").css("color","#055aaa");
+			})
+			var mySwiper = new Swiper('.swiper-container', {
+				autoplay: 2000,//可选选项，自动滑动
+				loop : true,//环路
+				prevButton:'.swiper-button-prev',//左右按钮
+				nextButton:'.swiper-button-next',
+				pagination : '.swiper-pagination',//分页器
+				autoplayDisableOnInteraction : false,//点击后继续播放
+			});
+			$('.swiper-container').mouseenter(function(){
+				mySwiper.stopAutoplay();
+			}).mouseleave(function(){
+				mySwiper.startAutoplay();
+			});
 			// 贵州旅游
 			var mySwiper2 = new Swiper('.swiper-container2', {
 				pagination: 'null',
@@ -624,45 +632,39 @@
 			    nextButton: '.swiper-button-next',
 			    prevButton: '.swiper-button-prev',
 			});
-			// 导航条点击事件
-			$("#header2 li").click(function(){
-				$(this).find("a").css("color","#2863c8").find("i").css("color","#2863c8");
-				$(this).siblings("li").find("a").css("color","#7a7a7a").find("i").css("color","#7a7a7a");
-			})
-			// 导航条划过事件
-			$("#header2 li").hover(function(){
-				$(this).find("a").css("color","#2863c8").find("i").css("color","#2863c8");
-				$(this).siblings("li").find("a").css("color","#7a7a7a").find("i").css("color","#7a7a7a");
-			},function(){
-				$("#header2 li").eq(0).find("a").css("color","#2863c8").find("i").css("color","#2863c8");
-				$("#header2 li").eq(0).siblings("li").find("a").css("color","#7a7a7a").find("i").css("color","#7a7a7a");
-			})
 			// 旅游模块
-			$(".main4 .nav li").hover(function(){
+			$(".main7 .nav li").hover(function(){
 				$(this).find("a").css("color","#2863c8");
 				$(this).siblings("li").find("a").css("color","#333333");
 			})
-			$(".main4 .nav li:eq(0)").hover(function(){
-				$(".main4 .content").css("display", "none");
-				$(".main4 .content1").css("display", "block");
+			$(".main7 .nav li:eq(0)").hover(function(){
+				$(".main7 .content").css("display", "none");
+				$(".main7 .content1").css("display", "block");
 			})
-			$(".main4 .nav li:eq(1)").hover(function(){
-				$(".main4 .content").css("display", "none");
-				$(".main4 .content2").css("display", "block");
+			$(".main7 .nav li:eq(1)").hover(function(){
+				$(".main7 .content").css("display", "none");
+				$(".main7 .content2").css("display", "block");
 			})
-			$(".main4 .nav li:eq(2)").hover(function(){
-				$(".main4 .content").css("display", "none");
-				$(".main4 .content3").css("display", "block");
+			$(".main7 .nav li:eq(2)").hover(function(){
+				$(".main7 .content").css("display", "none");
+				$(".main7 .content3").css("display", "block");
 			})
-			$(".main4 .nav li:eq(3)").hover(function(){
-				$(".main4 .content").css("display", "none");
-				$(".main4 .content4").css("display", "block");
+			$(".main7 .nav li:eq(3)").hover(function(){
+				$(".main7 .content").css("display", "none");
+				$(".main7 .content4").css("display", "block");
 			})
-			$(".main4 .nav li:eq(4)").hover(function(){
-				$(".main4 .content").css("display", "none");
-				$(".main4 .content5").css("display", "block");
+			$(".main7 .nav li:eq(4)").hover(function(){
+				$(".main7 .content").css("display", "none");
+				$(".main7 .content5").css("display", "block");
 			})
-			
+			$(window).scroll(function(){
+				var top = ($(document).scrollTop());
+				if(top > 840){
+					$("#returnTop").show();
+				}else if(top <= 600){
+					$("#returnTop").hide();
+				}
+			});
 		})
 	</script>
 </html>
