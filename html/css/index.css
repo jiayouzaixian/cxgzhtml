@@ -598,7 +598,7 @@ body {
 #big-main .main-shuju {
   overflow: hidden;
   background: #fff;
-  height: 370px;
+  height: 380px;
 }
 #big-main .main-shuju .shuju-title {
   width: 100%;
@@ -619,10 +619,12 @@ body {
   color: #055aaa;
   border-top: 4px solid #055aaa;
 }
-#big-main .main-shuju .cnt-top {
+#big-main .main-shuju .shuju_box1 .cnt-top,
+#big-main .main-shuju .shuju_box2 .cnt-top {
   overflow: hidden;
 }
-#big-main .main-shuju .cnt-top p {
+#big-main .main-shuju .shuju_box1 .cnt-top p,
+#big-main .main-shuju .shuju_box2 .cnt-top p {
   height: 45px;
   line-height: 45px;
   width: 101px;
@@ -633,34 +635,83 @@ body {
   text-align: center;
   border: 2px solid #338edf;
 }
-#big-main .main-shuju .cnt-top .left {
+#big-main .main-shuju .shuju_box1 .cnt-top .left,
+#big-main .main-shuju .shuju_box2 .cnt-top .left {
   color: #fff;
   background: #338edf;
 }
-#big-main .main-shuju .cnt-top .right {
+#big-main .main-shuju .shuju_box1 .cnt-top .right,
+#big-main .main-shuju .shuju_box2 .cnt-top .right {
   margin: 0;
 }
-#big-main .main-shuju .shuju-content {
+#big-main .main-shuju .shuju_box1 .shuju-content1,
+#big-main .main-shuju .shuju_box2 .shuju-content1,
+#big-main .main-shuju .shuju_box1 .shuju-content2,
+#big-main .main-shuju .shuju_box2 .shuju-content2,
+#big-main .main-shuju .shuju_box1 .shuju-content3,
+#big-main .main-shuju .shuju_box2 .shuju-content3 {
   width: 100%;
-  min-height: 400px;
+  height: 245px;
+  overflow: hidden;
 }
-#big-main .main-shuju .shuju-content .tubiao {
-  width: 428px;
-  min-height: 400px;
+#big-main .main-shuju .shuju_box1 .shuju-content1 .left,
+#big-main .main-shuju .shuju_box2 .shuju-content1 .left,
+#big-main .main-shuju .shuju_box1 .shuju-content2 .left,
+#big-main .main-shuju .shuju_box2 .shuju-content2 .left,
+#big-main .main-shuju .shuju_box1 .shuju-content3 .left,
+#big-main .main-shuju .shuju_box2 .shuju-content3 .left {
+  width: 49%;
   float: left;
-  margin-right: 10px;
+  padding: 0 20px;
+  border-right: 1px solid #c2def4;
+}
+#big-main .main-shuju .shuju_box1 .shuju-content1 .left h3,
+#big-main .main-shuju .shuju_box2 .shuju-content1 .left h3,
+#big-main .main-shuju .shuju_box1 .shuju-content2 .left h3,
+#big-main .main-shuju .shuju_box2 .shuju-content2 .left h3,
+#big-main .main-shuju .shuju_box1 .shuju-content3 .left h3,
+#big-main .main-shuju .shuju_box2 .shuju-content3 .left h3 {
+  font-size: 12px;
+  color: #3393df;
+  font-weight: bold;
   text-align: center;
+  margin-top: 15px;
 }
-#big-main .main-shuju .shuju-content .tubiao img {
-  width: 350px;
-  height: 328px;
-  margin-top: 20px;
+#big-main .main-shuju .shuju_box1 .shuju-content1 .left img,
+#big-main .main-shuju .shuju_box2 .shuju-content1 .left img,
+#big-main .main-shuju .shuju_box1 .shuju-content2 .left img,
+#big-main .main-shuju .shuju_box2 .shuju-content2 .left img,
+#big-main .main-shuju .shuju_box1 .shuju-content3 .left img,
+#big-main .main-shuju .shuju_box2 .shuju-content3 .left img {
+  width: 500px;
+  height: 220px;
 }
-#big-main .main-shuju .shuju-content .tubiao .two {
+#big-main .main-shuju .shuju_box1 .shuju-content1 .right,
+#big-main .main-shuju .shuju_box2 .shuju-content1 .right,
+#big-main .main-shuju .shuju_box1 .shuju-content2 .right,
+#big-main .main-shuju .shuju_box2 .shuju-content2 .right,
+#big-main .main-shuju .shuju_box1 .shuju-content3 .right,
+#big-main .main-shuju .shuju_box2 .shuju-content3 .right {
+  width: 48%;
+  float: left;
+  padding: 20px;
+}
+#big-main .main-shuju .shuju_box1 .shuju-content1 .right img,
+#big-main .main-shuju .shuju_box2 .shuju-content1 .right img,
+#big-main .main-shuju .shuju_box1 .shuju-content2 .right img,
+#big-main .main-shuju .shuju_box2 .shuju-content2 .right img,
+#big-main .main-shuju .shuju_box1 .shuju-content3 .right img,
+#big-main .main-shuju .shuju_box2 .shuju-content3 .right img {
+  width: 575px;
+}
+#big-main .main-shuju .shuju_box1 .shuju-content2,
+#big-main .main-shuju .shuju_box2 .shuju-content2,
+#big-main .main-shuju .shuju_box1 .shuju-content3,
+#big-main .main-shuju .shuju_box2 .shuju-content3 {
   display: none;
 }
-#big-main .main-shuju .shuju-content .right-cnt {
-  margin: 0;
+#big-main .main-shuju .shuju_box2 {
+  display: none;
 }
 #big-main .main-chaxun {
   margin-top: 30px;
