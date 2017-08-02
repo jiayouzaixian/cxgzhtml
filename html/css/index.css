@@ -40,9 +40,12 @@ body {
   float: left;
 }
 #header #content ul .header2 ul li a {
+  display: inline-block;
   color: #055aaa;
-  margin-left: 17px;
-  margin-right: 18px;
+  padding-left: 17px;
+  padding-right: 18px;
+  height: 117px;
+  width: 100%;
 }
 #header #content ul .header2 ul li:first-of-type {
   background: #055aaa;
@@ -277,26 +280,6 @@ body {
 #big-main .main-sincerity .sincerity-left .box .swiper-container2 ul li img {
   width: 100%;
   height: 100%;
-}
-#big-main .main-sincerity .sincerity-left .box .swiper-container2 .swiper-button-next,
-#big-main .main-sincerity .sincerity-left .box .swiper-container2 .swiper-button-prev {
-  position: absolute;
-  top: 22px;
-  right: -42px;
-  width: 40px;
-  color: #0459aa;
-  height: 376px;
-  line-height: 376px;
-  background: #eaeaea;
-  text-align: center;
-  font-weight: bolder;
-  font-size: 19px;
-}
-#big-main .main-sincerity .sincerity-left .box .swiper-container2 .swiper-button-next {
-  right: -42px;
-}
-#big-main .main-sincerity .sincerity-left .box .swiper-container2 .swiper-button-prev {
-  left: -42px;
 }
 #big-main .main-sincerity .sincerity-right {
   width: 305px;

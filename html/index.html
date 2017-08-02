@@ -653,7 +653,7 @@
 				<div class="sincerity-left tourism-left">
 					<div class="left-title">
 						<h2><i class="jy-iconfont icon-feiji"></i>诚信品牌     旅游业<span></span></h2>
-						<ul class="lndustry-name">
+						<ul class="lndustry-name" id="lvyou">
 							<li><a href="###">贵阳</a></li>
 							<li><a href="###">安顺</a></li>
 							<li><a href="###">毕节 </a></li>
@@ -662,7 +662,7 @@
 						</ul>
 						<span class="title-more">更多  ></span>
 					</div>
-					<div class="box">
+					<div class="box" id="box">
 						<div class="swiper-container2">
 							<ul class="swiper-wrapper">
 								<li class="swiper-slide"><img src="img/guiyang1.png" /></li>
@@ -692,8 +692,8 @@
 								<li class="swiper-slide"><img src="img/tongren2.png" /></li>
 								<li class="swiper-slide"><img src="img/tongren3.png" /></li>
 							</ul>
-						    <div class="swiper-button-prev"><</i></div>
-						    <div class="swiper-button-next">></div>
+						    <!--<div class="swiper-button-prev"><</i></div>
+						    <div class="swiper-button-next">></div>-->
 						</div>
 					</div>
 				</div>
@@ -1022,50 +1022,6 @@
 					</div>
 				</div>
 			</article>
-			<!--知识产权-->
-			<!--<article class="main-zixun">
-				<h2 class="zixun-title">知识产权</h2>
-				<div class="zixun-content">
-					<div class="content-left content-gonggong">
-						<h2 class="content-title">国家专利</h2>
-						<div class="img">
-							<img src="img/zhishi (1).png" alt="" />
-							<p class="jiehsao">	先查询再申请</p>
-						</div>
-						<ul class="content-ul">
-							<li><a href="###">张昌平回见国家主席 并深入探讨台湾不回归的气人问题</a><span>2017-02-06</span></li>
-							<li><a href="###">张昌平回见国家主席 并深入探讨台湾不回归的气人问题</a><span>2017-02-06</span></li>
-							<li><a href="###">张昌平回见国家主席 并深入探讨台湾不回归的气人问题</a><span>2017-02-06</span></li>
-							<li><a href="###">张昌平回见国家主席 并深入探讨台湾不回归的气人问题</a><span>2017-02-06</span></li>
-							<li><a href="###">张昌平回见国家主席 并深入探讨台湾不回归的气人问题</a><span>2017-02-06</span></li>
-						</ul>
-						<p class="content-btm">更多专利  ></p>
-					</div>
-					<div class="content-center content-gonggong ">
-						<h2 class="content-title">贵州专利</h2>
-						<div class="img">
-							<img src="img/zhishi (2).png" alt="" />
-							<p class="jiehsao">	贵州中心酿酒集团有限公司</p>
-						</div>
-						<ul class="content-ul">
-							<li><a href="###">张昌平回见国家主席 并深入探讨台湾不回归的气人问题</a><span>2017-02-06</span></li>
-							<li><a href="###">张昌平回见国家主席 并深入探讨台湾不回归的气人问题</a><span>2017-02-06</span></li>
-							<li><a href="###">张昌平回见国家主席 并深入探讨台湾不回归的气人问题</a><span>2017-02-06</span></li>
-							<li><a href="###">张昌平回见国家主席 并深入探讨台湾不回归的气人问题</a><span>2017-02-06</span></li>
-							<li><a href="###">张昌平回见国家主席 并深入探讨台湾不回归的气人问题</a><span>2017-02-06</span></li>
-						</ul>
-						<p class="content-btm">更多专利 ></p>
-					</div>
-					<div class="content-right content-gonggong">
-						<h2 class="content-title">法规</h2>
-						<p class="neirong">
-							强化刑事责任追究。新法对违法行为的查处上做了一个很大改革，即首先要求执法部门对违法行为进行一个判断，如果构成犯罪，就直接由公安部门进行侦查，追究刑事责任;如果不构成刑事犯罪，才是由行政执法部门进行行政处罚。此外还规定，行为人因食品安全犯罪被判处有期徒刑以上刑罚，则终身不得从事食品生产经营的管理工作。
-						</p>
-						<p class="content-btm">更多法规  ></p>
-					</div>
-				</div>
-			</article>-->
-			
 		</main>
 		<div id="returnTop">
 			<a href="#header"><i class="jy-iconfont icon-top"></a></i>
@@ -1127,7 +1083,33 @@
 			},function(){
 				$(this).find("a").css("border-top","4px solid #0459aa");
 			});
-			
+			$("#lvyou li:eq(0)").hover(function(){
+				$("#box ul").css("transform","translateX(0)")
+			})
+			$("#lvyou li:eq(1)").hover(function(){
+				$("#box ul").css("transform","translateX(-738px)")
+			})
+			$("#lvyou li:eq(2)").hover(function(){
+				$("#box ul").css("transform","translateX(-1476px)")
+			})
+			$("#lvyou li:eq(3)").hover(function(){
+				$("#box ul").css("transform","translateX(-2214px)")
+			})
+			$("#lvyou li:eq(4)").hover(function(){
+				$("#box ul").css("transform","translateX(-2952px)")
+			})
+			$("#lvyou li:eq(5)").hover(function(){
+				$("#box ul").css("transform","translateX(-3444px)")
+			})
+			$("#lvyou li:eq(6)").hover(function(){
+				$("#box ul").css("transform","translateX(-4182px)")
+			})
+			$("#lvyou li:eq(7)").hover(function(){
+				$("#box ul").css("transform","translateX(-4920px)")
+			})
+			$("#lvyou li:eq(8)").hover(function(){
+				$("#box ul").css("transform","translateX(-5658px)")
+			})
 			
 				var myChart = echarts.init(document.getElementById("chaxun_address"));
 				
