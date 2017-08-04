@@ -21,8 +21,8 @@ body {
   line-height: 117px;
 }
 #header #content ul .header1 {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   margin-right: 10px;
 }
 #header #content ul .header1 img {
@@ -170,7 +170,8 @@ body {
 }
 #big-main .main-sincerity .sincerity-left .left-title .lndustry-name {
   margin-right: 80px;
-  float: right;
+  float: left;
+  margin-left: 120px;
 }
 #big-main .main-sincerity .sincerity-left .left-title .lndustry-name li {
   float: left;
@@ -698,14 +699,15 @@ body {
 }
 #big-main .main-chaxun {
   margin-top: 30px;
-  overflow: hidden;
   background: #fff;
-  height: 515px;
+  height: 520px;
 }
 #big-main .main-chaxun .sincerity-left {
   width: 822px;
   height: 444px;
   float: left;
+  margin-top: 5px;
+  position: relative;
 }
 #big-main .main-chaxun .sincerity-left .left-title {
   width: 100%;
@@ -713,7 +715,6 @@ body {
   line-height: 82px;
   overflow: hidden;
   border-top: 2px solid #b3cde4;
-  position: relative;
 }
 #big-main .main-chaxun .sincerity-left .left-title h2 {
   font-size: 24px;
@@ -1053,7 +1054,7 @@ body {
 #returnTop {
   position: fixed;
   bottom: 24px;
-  right: 90px;
+  right: 10px;
   width: 50px;
   height: 70px;
   line-height: 30px;
