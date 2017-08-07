@@ -11,6 +11,7 @@
 #header #content ul {
   overflow: hidden;
   height: 117px;
+  position: relative;
 }
 #header #content ul li {
   float: left;
@@ -22,8 +23,8 @@
   overflow: hidden;
 }
 #header #content ul .header1 .img {
-  width: 230px;
-  height: 66px;
+  width: 80px;
+  height: 80px;
   margin-right: 5px;
 }
 #header #content ul .header1 .img img {
@@ -60,53 +61,67 @@
   color: #fff;
 }
 #header #content ul .header3 {
-  width: 310px;
+  width: 320px;
+  height: 117px;
+  position: relative;
+  left: -300px;
+  background: #fff;
+  display: none;
+}
+#header #content ul .header3 div {
   height: 32px;
   font-size: 0;
   margin-left: 15px;
 }
-#header #content ul .header3 select {
-  background: #eaeaea;
+#header #content ul .header3 div select {
+  background: #fff;
   width: 59px;
   height: 32px;
-  border: none;
   font-size: 12px;
   color: #5b5b5b;
   padding-left: 7px;
   vertical-align: middle;
+  border-right: none;
 }
-#header #content ul .header3 input {
+#header #content ul .header3 div input {
   width: 190px;
   height: 32px;
-  border: none;
   vertical-align: middle;
-  background: #eaeaea;
+  background: #fff;
 }
-#header #content ul .header3 input::-webkit-input-placeholder {
+#header #content ul .header3 div input::-webkit-input-placeholder {
   color: #c7c7c7;
   font-size: 12px;
 }
-#header #content ul .header3 input::-moz-placeholder {
+#header #content ul .header3 div input::-moz-placeholder {
   color: #c7c7c7;
   font-size: 12px;
 }
-#header #content ul .header3 input:-ms-input-placeholder {
+#header #content ul .header3 div input:-ms-input-placeholder {
   color: #c7c7c7;
   font-size: 12px;
 }
-#header #content ul .header3 button {
-  width: 61px;
+#header #content ul .header3 div button {
+  width: 50px;
   height: 32px;
-  border: none;
-  background: #055aaa;
-  color: #fff;
+  color: #c7c7c7;
   font-size: 16px;
   vertical-align: middle;
+  border: 1px solid #C7C7C7;
+  border-left: none;
 }
 #header #content ul .header4 {
   line-height: 117px;
   font-size: 13px;
   color: #045bab;
-  margin-left: 21px;
   font-weight: bold;
+  position: absolute;
+  top: 0;
+  right: 20px;
+}
+#header #content ul .header5 {
+  padding: 0 20px;
+}
+#header #content ul .header5 i {
+  font-size: 22px;
 }

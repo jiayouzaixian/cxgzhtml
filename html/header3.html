@@ -8,7 +8,7 @@
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
 	    <link rel="icon" href="img/logo.png" mce_href="img/logo.png" type="image/x-icon" />
     	<link rel="stylesheet" href="css/quanju.css" />
-    	<link rel="stylesheet" type="text/css" href="css/header2.css" />
+    	<link rel="stylesheet" type="text/css" href="css/header3.css" />
 	</head>
 	<body>
 		<header id="header">
@@ -18,7 +18,7 @@
 						<div class="img">
 							<img src="img/logo.png" />
 						</div>
-						<!--<p>诚信贵州好品</p>-->
+						<p>诚信贵州好品大数据平台</p>
 					</li>
 					<li class="header2">
 						<ul id="header2">
@@ -30,15 +30,18 @@
 							<li class="nav1"><a href="###">商标馆</a></li>
 						</ul>
 					</li>
-					<li class="header3">
-						<select>
-							<option value="pinpai">品牌</option>
-							<option value="pinpai">企业</option>
-							<option value="pinpai">商标</option>
-						</select>
-						<input type="text" id="search" placeholder="中国茅台酒厂有限责任公司" />
-						<button><i class="jy-iconfont icon-search"></i></button>
+					<li class="header3" id="header3">
+						<div>
+							<select>
+								<option value="pinpai">品牌</option>
+								<option value="pinpai">企业</option>
+								<option value="pinpai">商标</option>
+							</select>
+							<input type="text" id="search" placeholder="中国茅台酒厂有限责任公司" />
+							<button>x</button>
+						</div>
 					</li>
+					<li class="header5" id="header5"><i class="jy-iconfont icon-search"></i></li>
 					<li class="header4">
 						<span class="land"><i class="jy-iconfont icon-denglu"></i> 登录</span>　<span class="register"><i class="jy-iconfont icon-zhuce"></i> 注册</span>
 					</li>
@@ -56,6 +59,14 @@
 			$("#header2 li").hover(function(){
 				$(this).css({"background": "#055aaa","border-bottom": "5px solid #de0122"}).find("a").css("color","#fff");
 				$(this).siblings("li").css({"background": "#fff","border-bottom": "none"}).find("a").css("color","#055aaa");
+			})
+			$("#header5").click(function(){
+				$("#header3").css("display","block");
+				$("#header5").css("display","none");
+			})
+			$("#header3 button").click(function(){
+				$("#header3").css("display","none");
+				$("#header5").css("display","block");
 			})
 			
 		})
