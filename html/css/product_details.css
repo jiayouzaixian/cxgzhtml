@@ -110,8 +110,8 @@ body {
   line-height: 117px;
   font-size: 13px;
   color: #045bab;
-  margin-left: 21px;
   font-weight: bold;
+  float: right;
 }
 .top {
   height: 77px;
